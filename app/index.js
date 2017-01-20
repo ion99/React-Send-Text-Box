@@ -1,5 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var TextBox = require('./Main');
+let React = require('react');
+let ReactDOM = require('react-dom');
+let TextBox = require('./components/Main');
 
 ReactDOM.render(TextBox, document.getElementById('app'));

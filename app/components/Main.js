@@ -1,3 +1,5 @@
+let React = require("react");
+
 let TextBox = React.createClass({
   getInitialState: function() {
     return {
