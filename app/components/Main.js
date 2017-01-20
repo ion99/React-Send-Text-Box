@@ -1,6 +1,7 @@
-let React = require("react");
+var React = require("react");
+var boxPosition =require("../styles").boxPosition;
 
-let TextBox = React.createClass({
+var TextBox = React.createClass({
   getInitialState: function() {
     return {
       text: "",
@@ -25,7 +26,7 @@ let TextBox = React.createClass({
   },
   render: function() {
     return (
-      <div className="well clearfix">
+      <div className="well clearfix" style={boxPosition}>
         <textarea className="form-control"
                   onChange={this.handleChange}></textarea>
         <br/>
