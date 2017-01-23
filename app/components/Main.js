@@ -10,6 +10,7 @@ var TextBox = React.createClass({
   },
   handleChange: function(event) {
     this.setState({ text: event.target.value });
+    console.log("text ", event.target.value);
   },
   togglePhoto: function(event) {
     this.setState({ photoAdded: !this.state.photoAdded });
@@ -28,7 +29,8 @@ var TextBox = React.createClass({
     return (
       <div className="well clearfix" style={boxPosition}>
         <textarea className="form-control"
-                  onChange={this.handleChange}></textarea>
+                  onChange={this.handleChange}
+                  placeholder="Your text..."></textarea>
         <br/>
         <span>{ this.remainingCharacters() }</span>
         <br/>
