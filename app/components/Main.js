@@ -1,6 +1,7 @@
 var React = require("react");
 var boxPosition =require("../styles").boxPosition;
 
+
 var TextBox = React.createClass({
   getInitialState: function() {
     return {
