@@ -11,7 +11,7 @@ var TextBox = React.createClass({
   },
   handleChange: function(event) {
     this.setState({ text: event.target.value });
-    //console.log("text ", event.target.value);
+    // console.log("text ", event.target.value);
   },
   togglePhoto: function(event) {
     this.setState({ photoAdded: !this.state.photoAdded });
